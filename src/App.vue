@@ -1,11 +1,19 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <Header />
+    <Nav></Nav>
+  </div>
 </template>
 
 <script>
+import Header from "./components/Header/Header";
+import Nav from "./components/Nav/Nav";
 export default {
   name: "App",
-  components: {},
+  components: {
+    Header,
+    Nav,
+  },
 };
 </script>
 
