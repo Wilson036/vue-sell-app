@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'sell-icon';
-  src:  url('fonts/sell-icon.eot?ze40eg');
-  src:  url('fonts/sell-icon.eot?ze40eg#iefix') format('embedded-opentype'),
-    url('fonts/sell-icon.ttf?ze40eg') format('truetype'),
-    url('fonts/sell-icon.woff?ze40eg') format('woff'),
-    url('fonts/sell-icon.svg?ze40eg#sell-icon') format('svg');
+  font-family: "sell-icon";
+  src: url("../fonts/sell-icon.eot?ze40eg");
+  src: url("../fonts/sell-icon.eot?ze40eg#iefix") format("embedded-opentype"),
+    url("../fonts/sell-icon.ttf?ze40eg") format("truetype"),
+    url("../fonts/sell-icon.woff?ze40eg") format("woff"),
+    url("../fonts/sell-icon.svg?ze40eg#sell-icon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'sell-icon' !important;
+  font-family: "sell-icon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;

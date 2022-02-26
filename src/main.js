@@ -3,12 +3,14 @@
 import Vue from "vue";
 import App from "./App";
 import VueRouter from "vue-router";
+import Axios from "axios";
 
 import Goods from "./components/Goods/Goods";
 import Seller from "./components/Seller/Seller";
 import Ratings from "./components/Ratings/Ratings";
 
 Vue.config.productionTip = false;
+Vue.prototype.$axios = Axios;
 
 const routes = [
   { path: "/", redirect: "/goods" },

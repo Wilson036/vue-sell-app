@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :poiInfo="poiInfo" />
     <Nav />
     <router-view></router-view>
   </div>
@@ -14,6 +14,23 @@ export default {
   components: {
     Header,
     Nav,
+  },
+  data() {
+    return {
+      poiInfo: {},
+    };
+  },
+  created() {
+    const that = this;
+    this.$axios
+      .get("/api/goods")
+      .then((resp) => {
+        const dataSource = resp.data;
+        if (dataSource.code === 0) {
+          that.poiInfo = dataSource.data.poi_info;
+        }
+      })
+      .console.error((err) => console.log({ err }));
   },
 };
 </script>
